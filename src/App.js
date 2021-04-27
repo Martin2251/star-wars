@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //react router https://reactrouter.com/web/guides/quick-start
 //react route video https://www.youtube.com/watch?v=Law7wfdg_ls
+https://www.youtube.com/watch?v=aZGzwEjZrXc
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -16,7 +17,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="./components/card" component={card}></Route>
+        <Switch><Route path="./components/card" component={card}></Route></Switch>
+
         <div></div>
       </Router>
     </div>
