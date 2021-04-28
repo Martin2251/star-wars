@@ -26,13 +26,17 @@ const Card = () => {
 
   }
 
-
+<div className ="characterCard">
   <div className='charactersFeatures'>
   <p className='charactersData'>Height:{card.height} cm</p>
   <p className='charactersData'>Eye Color: {card.eye_color}</p>
   <p className='charactersData'>Hair Color: {card.hair_color}</p>
   <p className='charactersData'>Birth Date: {card.birth_year}</p>
+  </div>
 </div>
 
+<link className='backHomeLink' to '/'>
+  Back to Home
+  </link>
 
 export default Card
