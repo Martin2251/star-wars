@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React { useState, useEffect} from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,7 +16,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Switch><Route path="./components/card" component={card}></Route></Switch>
+        <Switch>
+          <Route path="./components/card" component={card}></Route></Switch>
 
         <div></div>
       </Router>
