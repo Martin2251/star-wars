@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=aZGzwEjZrXc
 
 function App() {
   const [loading, setLoading] = useState(true)
+  const
 
 
 
@@ -17,8 +18,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="./components/card" component={card}></Route></Switch>
-
+          <Route path="./components/card" exact component={card}></Route></Switch>
+          <Route exact path='/'></Route>
         <div></div>
       </Router>
     </div>
