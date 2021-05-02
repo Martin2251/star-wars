@@ -1,36 +1,30 @@
 import "./App.css";
-import React { useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Card from "./components/card";
+import Catalog from "./components/catalog";
 
 //react router https://reactrouter.com/web/guides/quick-start
 //react route video https://www.youtube.com/watch?v=Law7wfdg_ls
-https://www.youtube.com/watch?v=aZGzwEjZrXc
+//www.youtube.com/watch?v=aZGzwEjZrXc
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const
-
-useEffect(() => {
-  async function name(params) {
-
-  }
-
-
-  }
-}, [)
-
-
-
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route path="./components/card" exact component={card}></Route>
-          <Route exact path='/'></Route>
+        <div>
+          <Switch>
+            <Route path="/card/:id">
+              <Card />
+            </Route>
+            <Route exact path="/">
+              <Catalog />
+            </Route>
           </Switch>
-        <div></div>
+        </div>
       </Router>
     </div>
   );
 }
+
 export default App;
