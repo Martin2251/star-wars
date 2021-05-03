@@ -17,16 +17,11 @@ const Card = () => {
             // console.log(response.json())
             return response.json()
 
-  const fetchItems = async () => {
-    const data = await fetch(`https://swapi.dev/api/people/${id}`)
-    .then(response => {
-      console.log(response)
-      return response.json()
-    })
-    .then(data)
+        })
+        .then(data => {
+          console.log(data)
+          setCard(data)
+        })
+      }, card)
 
-  }
-
-
-
-export default Card
+      //console.log(card)
